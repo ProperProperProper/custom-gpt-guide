@@ -53,6 +53,15 @@ pulls in relevant passages before it answers — a technique usually called
 closer to giving someone a reference shelf than teaching them the material by
 heart.
 
+> **This is the step where files leave your machine.** Everything before
+> this point — sorting the inbox with `tools/prep_inbox.py`, writing this
+> guide's own repo — stayed local. A Knowledge upload is sent to and stored
+> on OpenAI's servers; that's the only way retrieval can work. If you
+> haven't already, run the inbox through the sorter and read its flagged-
+> file report first — see [docs/05](05-prepping-your-inbox.md) and
+> [docs/06](06-privacy-and-data.md) for the full detail on what happens to
+> a file once it's uploaded and who can end up seeing it.
+
 **What's worth knowing before uploading:**
 
 - PDFs, Word docs, plain text, CSVs, and a handful of other formats all work.

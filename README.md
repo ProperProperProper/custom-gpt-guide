@@ -19,6 +19,12 @@ heavier.
 **Requirements:** a ChatGPT Plus, Team, or Enterprise account. Start at
 [chatgpt.com](https://chatgpt.com) → sidebar → **Explore GPTs** → **Create**.
 
+> **Local vs. shared, in one line:** sorting your documents (`tools/`) never
+> leaves your machine; uploading them to Knowledge sends them to OpenAI's
+> servers, on purpose — that's how the GPT searches them. Full breakdown,
+> including whether OpenAI trains on what you upload and who can see it once
+> shared: **[docs/06-privacy-and-data.md](docs/06-privacy-and-data.md)**.
+
 ## Contents
 
 1. **[The walkthrough](docs/01-walkthrough.md)** — the full step-by-step, start to finish
@@ -26,13 +32,16 @@ heavier.
 3. **[Common mistakes](docs/03-common-mistakes.md)** — what to head off before your friend hits them
 4. **[Example prompts](docs/04-example-prompts.md)** — copy-paste starting points for the Builder conversation
 5. **[Prepping your inbox](docs/05-prepping-your-inbox.md)** — turning a messy folder of documents into clean Knowledge material, using the sorter in `tools/`
+6. **[Privacy and data](docs/06-privacy-and-data.md)** — what's local, what's sent to OpenAI, training defaults by account type, and who can see a GPT's Knowledge once it's shared
 
 ## tools/prep_inbox.py
 
 A script that sorts and cleans a folder of documents — de-duplicates,
 extracts text from PDF/DOCX/TXT/MD/RTF, flags anything that looks
 sensitive, and writes clean files plus an index ready to hand off for
-upload. Runs entirely on your own machine, no API key needed. See
+upload. **Runs entirely on your own machine — no API key, no network calls,
+nothing sent anywhere** (see [docs/06-privacy-and-data.md](docs/06-privacy-and-data.md#verifying-this-yourself)
+for how to verify that yourself rather than take it on faith). See
 [docs/05-prepping-your-inbox.md](docs/05-prepping-your-inbox.md) for the
 full walkthrough, or just:
 

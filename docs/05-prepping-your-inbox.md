@@ -2,8 +2,13 @@
 
 You don't need a GPT subscription for this part — the sorting and cleaning
 happens on your own machine, for free, before anything touches ChatGPT. The
-subscription is only needed for the upload step in
-[docs/01-walkthrough.md, step 4](01-walkthrough.md#4-hand-it-material--this-is-the-training).
+script makes zero network calls; nothing here is sent anywhere, to OpenAI or
+otherwise. The subscription is only needed for the upload step in
+[docs/01-walkthrough.md, step 4](01-walkthrough.md#4-hand-it-material--this-is-the-training) —
+see [docs/06-privacy-and-data.md](06-privacy-and-data.md) for exactly where
+that local/not-local line falls, how to verify this tool really is local
+yourself instead of trusting this doc, and what happens to a file once it's
+actually uploaded.
 
 ## Why bother cleaning up first
 

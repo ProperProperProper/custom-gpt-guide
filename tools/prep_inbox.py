@@ -33,6 +33,17 @@ Usage:
 
 Requires: pypdf, python-docx (see requirements.txt — run inside the
 tools/.venv this repo's README sets up, not your system Python).
+
+PRIVACY: this script makes no network calls. It only reads files under
+the inbox path you give it and writes files under the output path you
+give it — nothing is sent anywhere, to OpenAI or otherwise. Don't take
+that on faith: this file has zero imports of `requests`, `urllib`,
+`http`, `socket`, or any other networking module (check the import
+block below, or `grep -nE "^(import|from) " prep_inbox.py`), and you can
+run it with your network disconnected entirely to confirm the same
+thing empirically. See ../docs/06-privacy-and-data.md for where the
+local/not-local line actually falls in the rest of the process — this
+script is the local part; uploading its output to Knowledge is not.
 """
 
 from __future__ import annotations
