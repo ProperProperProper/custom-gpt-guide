@@ -25,6 +25,22 @@ heavier.
 2. **[Configure tab field reference](docs/02-field-reference.md)** — what every field in the setup screen actually does
 3. **[Common mistakes](docs/03-common-mistakes.md)** — what to head off before your friend hits them
 4. **[Example prompts](docs/04-example-prompts.md)** — copy-paste starting points for the Builder conversation
+5. **[Prepping your inbox](docs/05-prepping-your-inbox.md)** — turning a messy folder of documents into clean Knowledge material, using the sorter in `tools/`
+
+## tools/prep_inbox.py
+
+A script that sorts and cleans a folder of documents — de-duplicates,
+extracts text from PDF/DOCX/TXT/MD/RTF, flags anything that looks
+sensitive, and writes clean files plus an index ready to hand off for
+upload. Runs entirely on your own machine, no API key needed. See
+[docs/05-prepping-your-inbox.md](docs/05-prepping-your-inbox.md) for the
+full walkthrough, or just:
+
+```
+cd tools
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python prep_inbox.py ~/Downloads/my-inbox --output ~/Downloads/cleaned
+```
 
 ## Quick start
 
