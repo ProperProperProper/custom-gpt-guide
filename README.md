@@ -43,6 +43,7 @@ heavier.
 
 ### Reference & Examples
 11. **[Troubleshooting & real-world examples](docs/15-troubleshooting-examples.md)** — common issues + 3 complete working GPT configurations
+12. **[Sharing with users](docs/16-sharing-with-users.md)** — how to share your GPT so users can access it, ask questions, and get answers
 
 ## tools/prep_inbox.py
 
