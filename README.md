@@ -27,12 +27,22 @@ heavier.
 
 ## Contents
 
+### Getting Started
 1. **[The walkthrough](docs/01-walkthrough.md)** — the full step-by-step, start to finish
 2. **[Configure tab field reference](docs/02-field-reference.md)** — what every field in the setup screen actually does
 3. **[Common mistakes](docs/03-common-mistakes.md)** — what to head off before your friend hits them
 4. **[Example prompts](docs/04-example-prompts.md)** — copy-paste starting points for the Builder conversation
 5. **[Prepping your inbox](docs/05-prepping-your-inbox.md)** — turning a messy folder of documents into clean Knowledge material, using the sorter in `tools/`
 6. **[Privacy and data](docs/06-privacy-and-data.md)** — what's local, what's sent to OpenAI, training defaults by account type, and who can see a GPT's Knowledge once it's shared
+
+### Build & Operate
+7. **[Implementation guide](docs/07-implementation-guide.md)** — phase-by-phase walkthrough (20 min from idea to published GPT)
+8. **[Advanced configuration](docs/12-advanced-configuration.md)** — deep dive into each Configure field and how to use it
+9. **[Knowledge base best practices](docs/13-knowledge-base-best-practices.md)** — how to structure files so your GPT searches them correctly
+10. **[Monitoring & optimization](docs/14-monitoring-optimization.md)** — how to measure success and improve over time
+
+### Reference & Examples
+11. **[Troubleshooting & real-world examples](docs/15-troubleshooting-examples.md)** — common issues + 3 complete working GPT configurations
 
 ## tools/prep_inbox.py
 
